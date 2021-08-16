@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_menu_charge_booster"
+        android:icon="@drawable/ic_optimize"
+        android:title="" />
+
+    <item
+        android:id="@+id/item_menu_battery_saver"
+        android:icon="@drawable/ic_cil_battery"
+        android:title="" />
+
+</menu>

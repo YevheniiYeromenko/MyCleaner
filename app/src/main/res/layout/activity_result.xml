@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:text="Completed"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            app:srcCompat="@drawable/im_check_h_blue" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+            app:layout_constraintEnd_toEndOf="@+id/imageView7"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="@+id/imageView7"
+            app:srcCompat="@drawable/im_check_m_blue" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+            app:layout_constraintEnd_toEndOf="@+id/imageView8"
+            app:layout_constraintStart_toStartOf="@+id/imageView8"
+            app:layout_constraintTop_toTopOf="@+id/imageView8"
+            app:srcCompat="@drawable/im_check_l_blue" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+            app:layout_constraintEnd_toEndOf="@+id/imageView9"
+            app:layout_constraintStart_toStartOf="@+id/imageView9"
+            app:layout_constraintTop_toTopOf="@+id/imageView9"
+            app:srcCompat="@drawable/ic_check" />
+
+        <TextView
+            android:id="@+id/tvResultCompleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1/4 optimization completed!"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageView7"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="You haven't done some cleans"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvResultCompleted"
+            app:layout_constraintStart_toStartOf="@+id/tvResultCompleted"
+            app:layout_constraintTop_toBottomOf="@+id/tvResultCompleted" />
+
+        <ImageView
+            android:id="@+id/imResultChargeBooster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="@+id/textView15"
+            app:layout_constraintStart_toStartOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/ad_view_container"
+            app:srcCompat="@drawable/ic_button_charge_booster" />
+
+        <ImageView
+            android:id="@+id/imResultBatterySaver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="@+id/imResultChargeBooster"
+            app:layout_constraintStart_toStartOf="@+id/imResultChargeBooster"
+            app:layout_constraintTop_toBottomOf="@+id/imResultChargeBooster"
+            app:srcCompat="@drawable/ic_button_battery_saver" />
+
+        <ImageView
+            android:id="@+id/imResultCpuCooler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="@+id/imResultBatterySaver"
+            app:layout_constraintStart_toStartOf="@+id/imResultBatterySaver"
+            app:layout_constraintTop_toBottomOf="@+id/imResultBatterySaver"
+            app:srcCompat="@drawable/ic_button_cpu_cooler" />
+
+        <ImageView
+            android:id="@+id/imResultJunkCleaner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="@+id/imResultCpuCooler"
+            app:layout_constraintStart_toStartOf="@+id/imResultCpuCooler"
+            app:layout_constraintTop_toBottomOf="@+id/imResultCpuCooler"
+            app:srcCompat="@drawable/ic_button_junk_cleaner" />
+
+        <FrameLayout
+            android:id="@+id/ad_view_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/imResultChargeBooster"
+            app:layout_constraintStart_toStartOf="@+id/imResultChargeBooster"
+            app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
